@@ -5,13 +5,10 @@ while (k <10){
   i <- i +1
   k <- i
   
-  if (i>5)
-  {
+  if (i>5){
     k <- k - a
-  }
   
-  else
-  {
+  }else{
     k <- k + 1
   }
   print(k)
