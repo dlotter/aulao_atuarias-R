@@ -7,13 +7,12 @@ f <- function(x, TOL = 10^-8){
   repeat{
     #formula geral da parcela
     parcela <- (-1)^(c-1)*(x^k)/factorial(k)
-    k <- k + 2
-    c <- c + 1
-    if (abs(parcela) > TOL){
+    if (abs(parcela) < TOL){
       break
     }
+    k <- k + 2
+    c <- c + 1
   }
   print('Valor encontrado')
   print(c)
 }
-
