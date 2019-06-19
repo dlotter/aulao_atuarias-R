@@ -5,7 +5,7 @@ f <- function(x, TOL = 10^-8){
   c <- 1 #contador do número de termos (cresce de 1 em 1)
   
   while(abs(parcela) > TOL){
-    #função geral parcela
+    #formula geral da parcela
     parcela <- (-1)^(c-1)*(x^k)/factorial(k)
     k <- k + 2
     c <- c + 1
