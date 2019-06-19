@@ -6,7 +6,7 @@ f <- function(x, TOL = 10^-8){
 
   repeat{
     #formula geral da parcela
-    parcela <- (-1)^(c-1)*(x^k)/factorial(k)
+    parcela <- ((-1)^(c-1))*(x^k)/factorial(k)
     if (abs(parcela) < TOL){
       break
     }
