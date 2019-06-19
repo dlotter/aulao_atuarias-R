@@ -5,6 +5,7 @@ air <- data.frame("ozone" = c(41,36,12,18,23,19),
                   "month" = c(5,5,5,5,5,5),
                   "day" = c(1,2,3,4,7,8))
 
+
 head(air)
 
 # item A
@@ -27,4 +28,3 @@ length(air$Wind[air$Wind < 0.3*max])
 # item D
 dia <- air$day[air$ozone == min(air$ozone)]
 mes <- air$month[air$ozone == min(air$ozone)]
-

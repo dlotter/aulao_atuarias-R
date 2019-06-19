@@ -3,11 +3,13 @@ x <- c(34,33,65,37,89,NA,43,NA,11,NA,23,NA)
 #item A
 
 # 1ยบ jeito
+
 soma_na = sum(is.na(x))
 
 print(soma_na)
 
 # 2ยบ jeito
+
 soma_na <- 0
 c <- 1
 for (c in 1:12) {
@@ -19,6 +21,12 @@ for (c in 1:12) {
 print(soma_na)
 
 #item B
+
+# 1บ jeito
+y <- x[!is.na(x)]
+
+
+#2บ jeito
 
 y <- vector('numeric')
 c <- 1
@@ -34,6 +42,11 @@ print(y)
 
 # item C
 
+# 1บ jeito
+
+z <- y[y%%2==1]
+
+# 2บ jeito
 z <- vector('numeric')
 c <- 1
 for (c in 1:length(y)) {
@@ -46,7 +59,8 @@ print(z)
 
 # item D
 
-media = sum(y)/length(y)
-media = media +3
-soma_acima_media = sum(y>media)
+media <- sum(y)/length(y)
+media <- mean(y)
+media <- media +3
+soma_acima_media <- sum(y>media)
 print(soma_acima_media)
