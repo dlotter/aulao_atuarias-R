@@ -1,6 +1,6 @@
 f <- function(){ }
 
-fsec <- function(xAnt0, xAnt1, nmax, TOL){
+fsec <- function(xAnt0, xAnt1, nmax, TOL, f){
   k <- 1
   
   while(k <= nmax){
