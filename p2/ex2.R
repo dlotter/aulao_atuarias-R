@@ -1,4 +1,5 @@
-# O mesmo script do ex, mas tente fazer na mão
+# O mesmo script do ex da prova, mas tente fazer na mão
+
 i <- 2
 a <- 1
 k <- 1
