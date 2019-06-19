@@ -1,5 +1,3 @@
-#fórmula geral
-
 f<-function(x){  }
 
 bissec<-function(a,b,nmax,TOL,f){
@@ -9,22 +7,17 @@ bissec<-function(a,b,nmax,TOL,f){
     if( f((a+b)/2) == 0 || abs(f((a+b)/2)) < TOL){
       print("encontrado a raiz")
       print((a+b)/2)
-      #abaixo virá o número de interações
       print("número de interações")
       print(k)
       break
-    }
-    
-    else{
+    }else{
       pm<- (a+b)/2
       
       if( sign(f(a)) == sign(f(pm) )){
         a<-pm
         print("não foi encontrada a raíz")
         print(a)
-      }
-      
-      else{
+      }else{
         b<-pm 
         print("não foi encontrada a raíz")
         print(b)
