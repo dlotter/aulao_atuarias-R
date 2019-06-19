@@ -1,21 +1,21 @@
 f <- function(){ }
 
-fsec <- function(xAnt0, xAnt1, nmax, TOL, f){
+fsec <- function(a, b, nmax, TOL, f){
   k <- 1
   
   while(k <= nmax){
-    xAtual = xAnt1 - (xAnt0 - xAnt1)*f(xAnt1)/(f(xAnt0) - f(xAnt1))
+    c = b - (a - b)*f(b)/(f(a) - f(b))
   
-    Er = abs(xAtual-XAnt1/xAtual)
+    Er = abs(c-b/c)
     
     if(Er < TOL){
       print('Valor encontrado')
-      print(xAtual)
+      print(c)
       print('Número de interações')
       print(k)
     }else{
-      xAnt0 = xAnt1
-      xAnt1 = xAtual
+      a = b
+      b = c
     }
   }
 }
